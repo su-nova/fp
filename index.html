@@ -5,54 +5,394 @@
   <meta charset="utf-8">
   <title>Final Project</title>
 
-  <!-- Styles.css File -->
-  <link rel="stylesheet" href="css/styles.css">
 
-  <!-- BootstrapCDN (CSS) -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/pricing/">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/navbar-fixed/">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
-  <!-- BootstrapCDN (JS) -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/navbar-fixed/%22%3E%22%3E">
+  <link href="navbar-top-fixed.css" rel="stylesheet">
 
   <!-- Font Awesome Kit (Icon) -->
   <script src="https://kit.fontawesome.com/aa194f5ae8.js" crossorigin="anonymous"></script>
 
+  <style media="screen">
+    body {
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    /* Container */
+
+    .container {
+      padding: 1% 3%;
+    }
+
+
+
+    /* Carousel
+  .carousel-item {
+    padding:0.5% 0;
+  }
+
+  .floating-items{
+    position: absolute;
+    top: 5rem;
+    left: 3rem;
+  }
+  */
+    .content {
+      margin-top: 5%;
+    }
+
+    .container .home-row {
+      border: 1px solid #000;
+    }
+
+    .container .heading-1 {
+      font-weight: 900;
+      font-size: 3rem;
+    }
+
+    .container .home-heading {
+      color: #d61d23;
+    }
+
+    .container .more-btn {
+      border-radius: 30%;
+      padding: 1% 3%;
+      background-color: #d61d23;
+      border: none;
+      color: #fff;
+      text-decoration: none;
+      text-align: center;
+      margin-top: 1rem;
+    }
+
+    .container hr {
+      margin-top: 3%;
+      margin-bottom: 3%;
+    }
+
+    .clr {
+      background-color: #262626;
+    }
+
+    .fibr-fast-img {
+      width: 100%;
+      border-radius: 30px;
+    }
+
+    .plans-btn {
+      background-color: #ea373d;
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      padding: 1% 3%;
+      margin-right: 0.8125rem;
+    }
+
+    .subscribe-btn {
+      background-color: #efefef;
+      color: #000;
+      border: none;
+      border-radius: 10px;
+      padding: 1% 3%;
+      margin-right: 0.8125rem;
+    }
+  </style>
 </head>
 
 <body>
 
   <!-- Nav Section -->
-  <section class="nav-section">
-    <div class="container-fluid">
-      <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="">CLASSIC</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <header class="p-5 clr text-white">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top clr">
+      <div class="container-fluid navbar-fixed-top">
+        <a class="navbar-brand" href="#"><img src="https://my.pldthome.com/Assets/images/header/default/logo.png"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          </ul>
+          <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="#footer">Services</a>
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                PLDT Plans
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Fibr Plus Plans</a></li>
+                <li><a class="dropdown-item" href="#">Fibr Unli Plans</a></li>
+                <li><a class="dropdown-item" href="#">Asenseo Fibr Plans</a></li>
+              </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#pricing">Contact</a>
+              <a class="nav-link">About Us</a>
             </li>
           </ul>
         </div>
-      </nav>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Carousel -->
+  <!-- <section>
+    <div class="row">
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+
+            <div class="carousel-bg-1">
+              <img src="https://pldthome.com/images/default-source/default-album/pldt-christmas-desktop.jpg?sfvrsn=486d8f13_0" alt="">
+            </div>
+
+            <div class="floating-items">
+              <div class="carousel-text">
+                <h1 style="font-weight: 900;">
+                  Get a chance to win
+                  <br style="user-select: auto;">
+                  exciting prizes!
+                </h1>
+              </div>
+
+              <button class="carousel-btn" type="button" name="button">LEARN MORE</button>
+            </div>
+
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-bg">
+
+            </div>
+            <img src="https://pldthome.com/images/default-source/default-album/speedboost-desktopbc30df6f60a76f15a26fff000085f869.jpg?sfvrsn=2997b013_0" alt="Welcome to Fiber fast">
+
+            <div class="floating-items">
+              <div class="carousel-text">
+                <h1 style="font-weight: 800;">
+                  Welcome to the
+                  <br style="user-select: auto;">
+                  FIBER-FAST FUTURE
+                </h1>
+                <p style="user-select: auto;">
+                  We're upgrading our conenctions to make YOUR smart home possible.
+                  <br style="user-select: auto;">
+                  Introducing the all-new PLDT Home Fibr plans.
+                </p>
+              </div>
+
+              <button class="carousel-btn" type="button" name="button">LEARN MORE</button>
+            </div>
+
+          </div>
+          <div class="carousel-item">
+
+            <div class="carousel-bg">
+              <img src="https://pldthome.com/images/default-source/default-album/hbo-go-christmas-homepage-desktop.jpg?sfvrsn=89998e13_0" alt="Hollywood hits for the HBO GO">
+            </div>
+
+            <div class="floating-items">
+              <div class="carousel-text">
+                <h1 style="font-weight: 900;" class="HBO-text">
+                  Hollywood hits for
+                  <br style="user-select: auto;">
+                  the holidays with
+                  <br style="user-select: auto;">
+                  HBO GO
+                </h1>
+                <p style="user-select: auto;">
+                  Stream blockbusters, HBO Original series, and more this Christmas.
+                  <br style="user-select: auto;">
+                  and <strong style="user-select: auto;">save up to ₱217 for 4 months</strong>!
+                </p>
+              </div>
+
+              <div class="carousel-logo">
+                <img src="https://pldthome.com/images/default-source/default-album/pldt-hbogo-white.png?sfvrsn=f28aae13_0" alt="">
+              </div>
+              <button class="carousel-btn" type="button" name="button">LEARN MORE</button>
+            </div>
+
+          </div>
+
+
+          <div class="carousel-item">
+
+            <div class="carousel-bg">
+              <img src="https://pldthome.com/images/default-source/default-album/ookla-desktop.jpg?sfvrsn=aa1fb113_0" alt="Fastest Every Year">
+            </div>
+
+            <div class="floating-items">
+              <div class="carousel-text">
+                <h1 style="font-weight: 900;" class="Ookla-text">
+                  Fastest every year.
+                </h1>
+                <p style="user-select: auto" ;>
+                  <strong>PLDT Home</strong> is the country's four-peat winner of the annual <strong>Ookla® of</strong>
+
+                  <br style="user-select: auto;">
+
+                  <strong>Speedtest Intelligence®,</strong> making it the <strong>fastest broadband</strong> in the
+
+                  <br style="user-select: auto;">
+
+                  Philippines.
+                </p>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 carousel-logo">
+                  <img src="https://pldthome.com/images/default-source/ooklaawards/ookla-main.png" alt="">
+                </div>
+                <div class="col-lg-6">
+                  <p style="user-select: auto;">
+                    Based on analysis by Ookla® of Speedtest
+                    <br style="user-select: auto;">
+                    Intelligence® data Q1-Q2 2021. Ookla trademarks
+                    <br style="user-select: auto">
+                    used under license and reprinted with
+                    <br style="user-select: auto;">
+                    permission
+                  </p>
+                </div>
+              </div>
+              <button class="carousel-btn" type="button" name="button">LEARN MORE</button>
+            </div>
+
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-bg">
+              <img src="https://pldthome.com/images/default-source/home-revamp/banner/wifi-mesh-desktop.gif" alt="Connect better with zero deadspots">
+            </div>
+
+            <div class="floating-items">
+              <div class="carousel-text">
+                <h1 class="deadspots-text">
+                  Connect <i>better</i> with
+                  <br />
+                  zero deadspots
+                </h1>
+                <p style="user-select:auto;">
+                  Enjoy strong wifi signal in every room so you can work,
+                  <br />
+                  study, watch, and play seamlessly wherevery you are at home
+                </p>
+              </div>
+
+              <button class="carousel-btn" type="button" name="button">LEARN MORE</button>
+            </div>
+
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
     </div>
+  </section> -->
+  <section class="content">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-6">
+        </div>
+        <div class="fibr-unli-img col-lg-6 cold-md-6">
+          <h1 class="heading-1 home-heading">
+            Experience <br>
+            of ultra fast Wi-Fi <br>
+            with Fibr Unli <br>
+          </h1>
+          <button class="plans-btn" type="button" name="button"> View Plans</button>
+          <button class="subscribe-btn" type="button" name="button"> Subscribe</button>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="row">
+        <div class="col-lg-6 col-md-6">
+          <h1 class="heading-1 home-heading">
+            Fiber-fast means <br>
+            mroe fun and more <br>
+            festivities. <br>
+            Welcome to Fibr Plus <br>
+          </h1>
+          <button class="plans-btn" type="button" name="button"> View Plans</button>
+          <button class="subscribe-btn" type="button" name="button"> Subscribe</button>
+        </div>
+        <div class="col-lg-6 col-md-6">
+          <img class="fibr-fast-img" src="images/1.jpg" alt="">
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="row">
+        <div class="col-lg-6 col-md-6">
+          <img class="" src="images/2.jpg" alt="">
+        </div>
+        <div class="col-lg-6 col-md-6">
+          <h1 class="heading-1 home-heading">
+            Fiber Broadband for <br>
+            Home-Based Businesses <br>
+          </h1>
+          <button class="plans-btn" type="button" name="button"> View Plans</button>
+          <button class="subscribe-btn" type="button" name="button"> Subscribe</button>
+        </div>
+      </div>
+    </div>
+
   </section>
 
-  <!-- Title Section -->
-  <section>
-    
-  </section>
 
+
+  <footer class="clr text-white text-center text-lg-start mt-xl-5 pt-4">
+    <div class="container p-4">
+      <div class="row">
+        <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">ABOUT US</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">SERVICES</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-5 col-md-6 mb-4 mb-lg-0">
+          <h5>Contact Us</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2 text-muted">Pasig Blvd., Extension Rd., Caniogan, Pasig City</li>
+            <li class="nav-item mb-2 text-muted">(02) 8888 8171</li>
+            <li class="nav-item mb-2 text-muted">enterprisecare@pldt.com.ph</li>
+          </ul>
+        </div>
+        <div class="col-lg-5 col-md-6 mb-4 mb-lg-0">
+          <form>
+            <h5>Provide your email</h5>
+            <p>To be updated with news and brand new promos we offer.</p>
+            <div class="d-flex w-100 gap-2">
+              <label for="newsletter1" class="visually-hidden">Email address</label>
+              <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+              <button class="btn btn-outline-danger" type="button">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class=" container d-flex justify-content-between py-4 my-4 border-top">
+      <p>&copy; 2021 PLDT Inc. All rights reserved.</p>
+      <ul class="list-unstyled d-flex">
+        <li class="ms-3"><a href="#" class="fa fa-twitter" style="color:#55ACEE;text-decoration:none;"></a></li>
+        <li class="ms-3"><a href="#" class="fa fa-facebook" style="color:#3B5998;text-decoration:none;"></a></li>
+        <li class="ms-3"><a href="#" class="fa fa-google" style="color:#dd4b39;text-decoration:none;"></a></li>
+      </ul>
+    </div>
+  </footer>
+  <script>
+    window.jQuery || document.write('<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js%22%3E
+  </script>')</script>
 </body>
 
 </html>
