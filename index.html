@@ -3,37 +3,30 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Final Project</title>
 
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- BootstrapCDN (CSS) -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/pricing/">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/navbar-fixed/">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/navbar-fixed/%22%3E%22%3E">
-  <link href="navbar-top-fixed.css" rel="stylesheet">
+    
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
   <!-- Font Awesome Kit (Icon) -->
   <script src="https://kit.fontawesome.com/aa194f5ae8.js" crossorigin="anonymous"></script>
 
-  <style media="screen">
+  <!-- Font Awesome Kit (Icon) -->
+  <script src="https://kit.fontawesome.com/aa194f5ae8.js" crossorigin="anonymous"></script>
+
+  <!-- Other Links -->
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/pricing/">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/navbar-fixed/">
+  <link href="navbar-top-fixed.css" rel="stylesheet">
+  <style>
     body {
       font-family: 'Montserrat', sans-serif;
-    }
-    .bd-placeholder-img {
-	font-size: 1.125rem;
-	text-anchor: middle;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	user-select: none;
-    }
-	  
-    @media (min-width: 768px) {
-    	.bd-placeholder-img-lg {
-		font-size: 3.5rem;
-	}
     }
 
     /* Container */
@@ -59,16 +52,6 @@
       color: #d61d23;
     }
 
-    .container .more-btn {
-      border-radius: 30%;
-      padding: 1% 3%;
-      background-color: #d61d23;
-      border: none;
-      color: #fff;
-      text-decoration: none;
-      text-align: center;
-      margin-top: 1rem;
-    }
 
     .container hr {
       margin-top: 3%;
@@ -93,6 +76,10 @@
       margin-right: 0.8125rem;
     }
 
+    .plans-btn:hover {
+      background-color: #bf2b30;
+    }
+
     .subscribe-btn {
       background-color: #efefef;
       color: #000;
@@ -101,46 +88,73 @@
       padding: 1% 3%;
       margin-right: 0.8125rem;
     }
+
+    .subscribe-btn:hover {
+      background-color: transparent;
+      color: #000;
+      border: 0.5px solid #000;
+    }
+
+    .icon {
+      color: #505050;
+      margin-right: 1%;
+      margin-bottom: 2%;
+      margin: 2% 0.5% 2% 0.5%;
+    }
+
+    .icon:hover {
+      color: #696969;
+      cursor: pointer;
+    }
+
+    .footer2 {
+      text-align: center;
+    }
+
+    .note {
+      color: #505050;
+    }
+
+    .footer-link:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 
-<body>
+<body style="background-color:#555555;">
 
-  <!-- Nav Section -->
- <div>
-	<header class="p-5 clr text-white">
-		<nav class="navbar navbar-expand-lg navbar-dark fixed-top clr">
-			<div class="container-fluid navbar-fixed-top">
-				<a class="navbar-brand" href="index.html"><img src="https://my.pldthome.com/Assets/images/header/default/logo.png"></a>
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-					</ul>
-					<ul class="navbar-nav">
-						<li class="nav-item">
-							<a class="nav-link active" aria-current="page" href="index.html">Home</a>
-						</li>
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-								PLDT Plans
-							</a>
-							<ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
-								<li><a class="dropdown-item" href="Product 1.html">Fibr Plus Plans</a></li>
-								<li><a class="dropdown-item" href="Product 2.html">Fibr Unli Plans</a></li>
-								<li><a class="dropdown-item" href="Product 3.html">Asenso Fibr Plans</a></li>
-							</ul>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="About us.html">About Us</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-	</header>
-</div>
+  <header class="p-5 clr text-white">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top clr">
+      <div class="container-fluid navbar-fixed-top">
+        <a class="navbar-brand" href="index.html"><img src="https://my.pldthome.com/Assets/images/header/default/logo.png"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                PLDT Plans
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="Product 1.html">Fibr Plus Plans</a></li>
+                <li><a class="dropdown-item" href="Product 2.html">Fibr Unli Plans</a></li>
+                <li><a class="dropdown-item" href="Product 3.html">Asenseo Fibr Plans</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="About Us.html">About Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
 
 
   <section class="content">
@@ -149,29 +163,26 @@
         <div class="col-lg-6 col-md-6">
           <img class="fibr-fast-img" src="images/3.jpg" alt="">
         </div>
-        <div class="fibr-unli-img col-lg-6 cold-md-6">
-          <h1 class="heading-1 home-heading">
-            Experience <br>
-            of ultra fast Wi-Fi <br>
+        <div class="col-text col-lg-6 cold-md-6">
+          <h1 class="heading-1 home-heading text-white">
+            Ultra Fast Wi-Fi <br>
+            for Gaming <br>
             with Fibr Unli <br>
           </h1>
           <a class="plans-btn" type="button" name="button" href="Product 2.html" style="text-decoration:none; color:white;"> View Plans</a>
-          <button class="subscribe-btn" type="button" name="button"> Subscribe</button>
         </div>
       </div>
 
       <hr>
 
       <div class="row">
-        <div class="col-lg-6 col-md-6">
-          <h1 class="heading-1 home-heading">
-            Fiber-fast means <br>
-            mroe fun and more <br>
-            festivities. <br>
-            Welcome to Fibr Plus <br>
+        <div class="col-text col-lg-6 col-md-6">
+          <h1 class="heading-1 home-heading text-white">
+            More bonding time <br>
+            with the family. <br>
+            Hello to Fibr Plus. <br>
           </h1>
           <a class="plans-btn" type="button" name="button" href="Product 1.html" style="text-decoration:none; color:white;"> View Plans</a>
-          <button class="subscribe-btn" type="button" name="button"> Subscribe</button>
         </div>
         <div class="col-lg-6 col-md-6">
           <img class="fibr-fast-img" src="images/1.jpg" alt="">
@@ -184,13 +195,12 @@
         <div class="col-lg-6 col-md-6">
           <img class="fibr-fast-img" src="images/2.jpg" alt="">
         </div>
-        <div class="col-lg-6 col-md-6">
-          <h1 class="heading-1 home-heading">
-            Fiber Broadband for <br>
-            Home-Based Businesses <br>
+        <div class="col-text col-lg-6 col-md-6">
+          <h1 class="heading-1 home-heading text-white">
+            Fibr for Home- <br>
+            Based Businesses <br>
           </h1>
           <a class="plans-btn" type="button" name="button" href="Product 3.html" style="text-decoration:none; color:white;"> View Plans</a>
-          <button class="subscribe-btn" type="button" name="button"> Subscribe</button>
         </div>
       </div>
     </div>
@@ -205,8 +215,8 @@
         <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
           <h5>Section</h5>
           <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="About us.html" class="nav-link p-0 text-muted">ABOUT US</a></li>
-            <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-muted">SERVICES</a></li>
+            <li class="nav-item mb-2"><a href="About us.html" class="nav-link p-0 text-muted footer-link">About Us</a></li>
+            <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-muted footer-link">Services</a></li>
           </ul>
         </div>
         <div class="col-lg-5 col-md-6 mb-4 mb-lg-0">
@@ -230,16 +240,25 @@
         </div>
       </div>
     </div>
-    <div class=" container d-flex justify-content-between py-4 my-4 border-top">
-      <p>&copy; 2021 PLDT Inc. All rights reserved.</p>
-      <ul class="list-unstyled d-flex">
-        <li class="ms-3"><a href="#" class="fa fa-twitter" style="color:#55ACEE;text-decoration:none;"></a></li>
-        <li class="ms-3"><a href="#" class="fa fa-facebook" style="color:#3B5998;text-decoration:none;"></a></li>
-        <li class="ms-3"><a href="#" class="fa fa-google" style="color:#dd4b39;text-decoration:none;"></a></li>
-      </ul>
+    <div class="footer2 container border-top">
+      <i class="fab fa-facebook icon"></i>
+      <i class="fab fa-twitter icon"></i>
+      <i class="fab fa-instagram icon"></i>
+      <i class="fab fa-youtube icon"></i>
+      <p>
+        &copy; 2021 PLDT Inc. All rights reserved. <br>
+        <em class="note">For Educational Purposes Only</em>
+      </p>
     </div>
   </footer>
+  
+<!-- BootstrapCDN (JS) -->
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
  <script>window.jQuery || document.write('<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"><\/script>')</script>
+
+
 </body>
 
 </html>
